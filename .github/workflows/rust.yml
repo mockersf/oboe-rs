@@ -55,7 +55,7 @@ jobs:
         uses: android-actions/setup-android@v2
       - name: Set Up Android tools
         run: |
-          ${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager --sdk_root=$ANDROID_SDK_ROOT --install "build-tools;${{ env.SDK_CMDLINE_TOOLS_VERSION }}"
+          ${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager --sdk_root=$ANDROID_SDK_ROOT --install "build-tools;${{ env.SDK_BUILD_TOOLS_VERSION }}"
           ${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager --sdk_root=$ANDROID_SDK_ROOT --install "cmdline-tools;${{ env.SDK_CMDLINE_TOOLS_VERSION }}"
           ${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager --sdk_root=$ANDROID_SDK_ROOT --install "ndk;${{ env.NDK_VERSION }}"
           ${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager --sdk_root=$ANDROID_SDK_ROOT --install "platforms;android-21"
@@ -113,7 +113,7 @@ jobs:
         uses: android-actions/setup-android@v2
       - name: Set Up Android tools
         run: |
-          ${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager --sdk_root=$ANDROID_SDK_ROOT --install "build-tools;${{ env.SDK_CMDLINE_TOOLS_VERSION }}"
+          ${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager --sdk_root=$ANDROID_SDK_ROOT --install "build-tools;${{ env.SDK_BUILD_TOOLS_VERSION }}"
           ${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager --sdk_root=$ANDROID_SDK_ROOT --install "cmdline-tools;${{ env.SDK_CMDLINE_TOOLS_VERSION }}"
           ${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager --sdk_root=$ANDROID_SDK_ROOT --install "ndk;${{ env.NDK_VERSION }}"
           ${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager --sdk_root=$ANDROID_SDK_ROOT --install "platforms;android-21"
@@ -224,7 +224,7 @@ jobs:
         uses: android-actions/setup-android@v2
       - name: Set Up Android tools
         run: |
-          ${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager --sdk_root=$ANDROID_SDK_ROOT --install "build-tools;${{ env.SDK_CMDLINE_TOOLS_VERSION }}"
+          ${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager --sdk_root=$ANDROID_SDK_ROOT --install "build-tools;${{ env.SDK_BUILD_TOOLS_VERSION }}"
           ${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager --sdk_root=$ANDROID_SDK_ROOT --install "cmdline-tools;${{ env.SDK_CMDLINE_TOOLS_VERSION }}"
           ${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager --sdk_root=$ANDROID_SDK_ROOT --install "ndk;${{ env.NDK_VERSION }}"
           ${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager --sdk_root=$ANDROID_SDK_ROOT --install "platforms;android-21"
